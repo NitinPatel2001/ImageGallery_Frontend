@@ -60,8 +60,8 @@ export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" style={{backgroundColor: "blanchedalmond", color: "Black"}}>
-        <Toolbar>
-          <a href='\' style={{textDecoration: "none"}}>
+        <Toolbar style={{textAlign: "center"}}>
+          <a width="auto" href='\' style={{textDecoration: "none"}}>
             <Typography
               variant="h5"
               href="http://localhost:3000"
@@ -69,12 +69,12 @@ export default function SearchAppBar() {
               component="div"
               padding={2}
               sx={{ flexGrow: 0.5, display: {sm:"block"}, alignItems: "center"}}
-              style={{fontFamily: "cursive", width:"500px"}}
+              style={{fontFamily: "cursive", marginRight: "50px"}}
             >
               Image Gallery
             </Typography>
           </a>
-          <Search sx={{alignContent: "center", color: "Black"}}>
+          <Search sx={{color: "Black"}}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
